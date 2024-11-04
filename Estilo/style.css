@@ -93,7 +93,8 @@ body {
     font-size: .7rem;
     font-weight: 700;
     color: var(--Dark-Slate-Grey);
-    padding-bottom: .5em;
+    
+    
 }
 
 
@@ -104,7 +105,9 @@ body {
     padding: 1em;
     border-radius: 5px;
     border: .5px solid gray;
-    margin-bottom: 1em;
+    padding-bottom: .5em;
+    padding: 1em;
+    margin-bottom: .5em;
 }
 
 button {
@@ -115,6 +118,23 @@ button {
     background-color: var(--Dark-Slate-Grey);
     color: var(--White);
     font-weight: 600;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+   gap: .5em;
+}
+
+#error-email {
+    align-self: flex-end;
+    padding-left: 1em;
+    font-size: .7rem;
+    font-weight: 700;
+    color: var(--Tomato);
+    padding-bottom: .5em;
+    padding-right: 3em;
+    display: none;
 }
 
 button:hover {

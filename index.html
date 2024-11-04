@@ -18,9 +18,13 @@
             <p class="check  p2">Measuring to ensure updates are a success</p>
             <p class="check  p3">And much more!</p>
         </div>
-        <label for="email" class="label">Email address</label>
-        <input type="email" name="email" id="inemail" placeholder="email@company.com">
-        <button>Subscribe to monthly newsletter</button>
+        <form action="" id="form">
+            <label for="email" class="label">Email address</label>
+            <span id="error-email">Valid Email required</span>
+            <input type="text" name="email" id="inemail" placeholder="email@company.com">
+            <button type="submit">Subscribe to monthly newsletter</button>
+        </form>
     </div>
 </body>
+<script src="script.js"></script>
 </html>
