@@ -1,8 +1,16 @@
 document.addEventListener("DOMContentLoaded", function() {
+    const subscription = document.querySelector(".subscription")
+    const success = document.querySelector(".success")
     const label = document.querySelector(".label")
     const form = document.getElementById("form")
     const emailField = document.getElementById("inemail")
     const errorEmail = document.getElementById("error-email");
+    const dimiss = document.getElementById("dimiss")
+
+    function togglelayouts(){
+        subscription.classList.toggle("hidden")
+        success.classList.toggle("hidden")
+    }
 
     form.addEventListener("submit", function(event){
         if(!emailValid(emailField.value)){
@@ -17,12 +25,19 @@ document.addEventListener("DOMContentLoaded", function() {
             label.style.marginBottom = "-2em"
         } else {
             errorEmail.style.display = "none"
+            event.preventDefault()
+            togglelayouts()
         }
     })
 
     function emailValid(email) {
-        const regex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/
-        return regex.test(email)
+        return String(email)
+        .toLowerCase()
+        .match(
+          /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|.(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/
+        );
     }
+
+    dimiss.addEventListener("click", togglelayouts)
     
 })

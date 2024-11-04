@@ -19,6 +19,7 @@
 
 body {
     font-family: var(--font-family);
+    background-color: #36384D;
 }
 
 .main-image {
@@ -30,6 +31,44 @@ body {
     flex-direction: column;
 }
 
+.subscription {
+    background-color: white;
+    height: 100vh;
+}
+
+.success {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: white;
+    width: 95vw;
+    border-radius: 10px;
+    padding-bottom: 2em;
+    margin-top: 10em;
+    margin-left: .6em;
+}
+
+.hidden {
+    display: none;
+}
+
+.one {
+    width: 90vw;
+}
+
+.two {
+    padding-bottom: 2em;
+    font-size: .9rem;
+    width: 90vw;
+}
+
+#dimiss {
+    align-self: center;
+    justify-content: center;
+    margin-right: 1em;
+    width: 90vw;
+}
 .main-quote {
     padding: .5em;
     font-size: 1.8rem;
@@ -110,7 +149,7 @@ body {
     margin-bottom: .5em;
 }
 
-button {
+.button {
     width: 90vw;
     margin-left: 1em;
     padding: 1em;
