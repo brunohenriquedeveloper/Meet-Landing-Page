@@ -34,6 +34,7 @@ body {
 .subscription {
     background-color: white;
     height: 100vh;
+    width: 100vw;
 }
 
 .success {
@@ -46,15 +47,27 @@ body {
     border-radius: 10px;
     padding-bottom: 2em;
     margin-top: 10em;
-    margin-left: .6em;
+    margin-left: .5em;
 }
+
+.suc-img {
+    align-self: flex-start;
+    padding: 1em;
+    height: 80px;
+    padding-left: 2em;
+}
+
+
 
 .hidden {
     display: none;
 }
 
-.one {
+.main-quote2 {
     width: 90vw;
+    font-size: 2.1rem;
+    padding-left: .4em;
+    padding-bottom: .5em;
 }
 
 .two {
