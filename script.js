@@ -6,6 +6,7 @@ document.addEventListener("DOMContentLoaded", function() {
     const emailField = document.getElementById("inemail")
     const errorEmail = document.getElementById("error-email");
     const dimiss = document.getElementById("dimiss")
+    const submitted = document.querySelector(".submitted-email")
 
     function togglelayouts(){
         subscription.classList.toggle("hidden")
@@ -27,6 +28,8 @@ document.addEventListener("DOMContentLoaded", function() {
             errorEmail.style.display = "none"
             event.preventDefault()
             togglelayouts()
+            submitted.innerText = emailField.value
+            emailField.value = ""
         }
     })
 
@@ -39,5 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     dimiss.addEventListener("click", togglelayouts)
+    
     
 })
