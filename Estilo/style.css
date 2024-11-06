@@ -20,6 +20,8 @@
 body {
     font-family: var(--font-family);
     background-color: #36384D;
+    margin: 0;
+    padding: 0;
 }
 
 .main-image {
@@ -115,7 +117,7 @@ body {
 }
 
 .im {
-    height: 25px;
+    height: 20px;
 }
 
 .img1 {
@@ -191,6 +193,155 @@ body {
     display: none;
 }
 
+.desktop-img {
+    display: none;
+}
+
 button:hover {
 background-color: #363a63;
+}
+
+@media screen and (min-width: 374px) {
+    .container{
+        height: 100vh;
+    }
+    .subscription{
+      height: 120vh;
+      padding-bottom: 1em;
+    }
+    .check-area {
+        grid-template-areas:  
+        "img1 text1"
+        "img2 text2 "
+        "img3 text3 ";
+    }
+
+    .two {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 424px){
+    .check-area {
+        grid-template-columns: 45px 1fr auto;
+    }
+}
+
+@media screen and (min-width: 580px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .button, #inemail {
+        width: 70vw;
+    }
+
+    .subscription {
+        display: flex;
+        flex-direction: column;
+        height: 140vh;
+        width: 80vw;
+    }
+
+    .main-image {
+        height: 55vh;
+        align-self: center;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    body {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        margin: 0; /* Adicionei isso para remover qualquer margem padrão */
+    }
+    
+    .main-image {
+        display: none;
+    }
+
+    .subscription {
+        width: 640px;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center; /* Adicionei isso para centralizar o conteúdo */
+        align-items: center; /* Adicionei isso para centralizar verticalmente */
+    }
+
+    .container {
+        display: flex;
+        justify-content: center; /* Adicionei isso para centralizar o conteúdo */
+        align-items: center; /* Adicionei isso para centralizar verticalmente */
+        width: 70vw;
+        height: 60vh;
+        margin: 3em;
+    }
+
+    .button {
+        width: 330px;
+    }
+
+    #inemail {
+        width: 330px;
+    }
+
+    .desktop-img {
+        display: block;
+        height: min-content;
+        padding: 1em;
+        height: 24em;
+    }
+
+    .main-quote {
+        padding-left: 2em;
+        font-size: 2rem;
+    }
+}
+
+@media screen and (min-width: 1023px) {
+    .main-quote {
+        font-size: 2.8rem;
+        padding-left: .5em;
+    }
+
+    .description {
+        font-size: .9rem;
+        width: 300px;
+    }
+  
+    .subscription {
+        width: 780px;
+        padding: .5em;
+        gap: 2em;
+    }
+
+    .check-area {
+        padding-bottom: 2em;
+    }
+
+    .container{
+        height: 500px;
+    }
+
+    .label {
+        font-size: .8rem;
+    }
+
+    #error-email {
+        font-size: .7rem;
+        margin-bottom: -.5em;
+    }
+
+    .desktop-img {
+        height: 30em;
+        margin-right: -60px;
+    }
 }
