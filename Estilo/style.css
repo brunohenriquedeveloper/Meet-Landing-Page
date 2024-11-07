@@ -198,8 +198,15 @@ body {
 }
 
 button:hover {
-background-color: #363a63;
-}
+    background: linear-gradient(
+        90deg,
+        #FF566F,
+        #FF634C
+      );
+
+      box-shadow: 2px 5px 5px rgba(0, 0, 0, 0.486);
+      border: 1px solid rgba(0, 0, 0, 0);
+    }
 
 @media screen and (min-width: 374px) {
     .container{
@@ -450,7 +457,7 @@ background-color: #363a63;
 
     #error-email {
         font-size: 1rem;
-        margin-right: -2em;
+        margin-right: 0em;
         margin-bottom: -1em;
     }
 }
