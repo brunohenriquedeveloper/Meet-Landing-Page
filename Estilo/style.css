@@ -265,6 +265,10 @@ background-color: #363a63;
         margin: 0; /* Adicionei isso para remover qualquer margem padrão */
         overflow-x: hidden;
     }
+
+    .content {
+        margin-left: 1em;
+    }
     
     .main-image {
         display: none;
@@ -286,6 +290,7 @@ background-color: #363a63;
         width: 70vw;
         height: 60vh;
         margin: 3em;
+        margin-top: 5em;
     }
 
     .button {
@@ -332,7 +337,7 @@ background-color: #363a63;
 
     .container{
         height: 500px;
-        margin-top: 7em;
+        margin-top: 5em;
     }
 
     .label {
@@ -372,5 +377,80 @@ background-color: #363a63;
 
     #dimiss {
         width: 600px;
+    }
+}
+
+@media screen and (min-width: 1399px) {
+    .subscription {
+        width: 1000px;
+        padding-right: 5em;
+    }
+
+    .container {
+        height: 600px;
+        margin-top: 4em;
+    }
+
+    .desktop-img {
+        height: 40em;
+        margin-right: -7em;
+        padding-right: 5em;
+    }
+
+    .content {
+        margin-left: 3em;
+        margin-right: -2em;
+    }
+
+    .main-quote {
+        font-size: 4rem;
+    }
+
+    .description {
+        font-size: 1.2em;
+        width: 500px;
+        padding-bottom: .5em;
+    }
+
+    .im {
+        height: 30px;
+    }
+
+    .check {
+        font-size: 1.2rem;
+    }
+
+    #inemail {
+        padding: 1.5em;
+        width: 450px;
+        margin-top: .5em;
+    }
+
+    .button {
+        width: 450px;
+        padding: 1.5em;
+        font-size: 1rem;
+    }
+
+    .main-quote2 {
+        font-size: 3rem;
+        margin-left: .6em;
+    }
+
+    .two {
+        width: 600px;
+        padding-bottom: 1em;
+        font-size: 1.3rem;
+    }
+
+    .label {
+        font-size: 1rem;
+        padding-bottom: .2em;
+    }
+
+    #error-email {
+        font-size: 1rem;
+        margin-right: -2em;
+        margin-bottom: -1em;
     }
 }
