@@ -64,7 +64,7 @@ body {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .main-quote2 {
@@ -251,6 +251,8 @@ background-color: #363a63;
         height: 55vh;
         align-self: center;
     }
+
+   
 }
 
 @media screen and (min-width: 700px) {
@@ -261,6 +263,7 @@ background-color: #363a63;
         width: 100%;
         height: 100%;
         margin: 0; /* Adicionei isso para remover qualquer margem padrão */
+        overflow-x: hidden;
     }
     
     .main-image {
@@ -329,6 +332,7 @@ background-color: #363a63;
 
     .container{
         height: 500px;
+        margin-top: 7em;
     }
 
     .label {
@@ -343,5 +347,30 @@ background-color: #363a63;
     .desktop-img {
         height: 30em;
         margin-right: -60px;
+    }
+
+    .success {
+        width: 700px;
+        margin-top: -3em;
+        padding: 1em;
+        padding-bottom: 3em;
+    }
+
+    .suc-img {
+        padding-left: 4em;
+    }
+
+    .main-quote2 {
+        align-self: flex-start;
+        margin-left: 1.4em;
+    }
+
+    .two {
+        width: 600px;
+        font-size: 1.1rem;
+    }
+
+    #dimiss {
+        width: 600px;
     }
 }
