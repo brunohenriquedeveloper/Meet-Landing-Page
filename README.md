@@ -1,6 +1,4 @@
-# Newsletter Sign-up Form With Success Message
-
-<h2 align="center">Newsletter sign-up form with success message 📰</h2>
+<h1 align="center">Newsletter sign-up form with success message 📰</h1>
 
 <p align="center">
   <a href="#objective">Objective</a> •
