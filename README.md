@@ -1,8 +1,4 @@
-# Newsletter sign-up form with success message
- 
- <h1 align="center">
-  <img align="center" src="./assets/nlw-return-logo.png" width="300px">
-</h1>
+# Newsletter Sign-up Form With Success Message
 
 <h2 align="center">Newsletter sign-up form with success message 📰</h2>
 
@@ -16,16 +12,8 @@
 <p align="center">
   
   <img
-    src="./assets/doctor-care-desktop.gif"
+    src="Newsletter sign-up form with success message.png"
     width="700px"
-    style="display: inline; border-radius: 15px; border: "
-  />
-</p>
-
-<p align="center">
-  <img
-    src="./assets/doctor-care-mobile.gif"
-    width="200px" height="400px"
     style="display: inline; border-radius: 15px; border: "
   />
 </p>
@@ -53,6 +41,6 @@ The layout design has been made available in Front-End Mentor through this <a hr
   <li><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference">JavaScript</a></li>
 </ul>
 
-<h2 id="about-me">About me 🧑</h2>
+<h2 id="about-me">About me 👨🏻</h2>
 
 My name is Bruno Henrique, I am 18 years old and I was born and raised in Brazil. I'm looking for my first opportunity in the web development, focusing on the JavaScript stack. I'm training my skills in HTML5, CSS3 and Javascript. I'm currently studying these technologies to solidify my knowledge in Front-End web development. 
