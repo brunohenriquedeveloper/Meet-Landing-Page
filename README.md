@@ -13,7 +13,7 @@
   
   <img
     src="Newsletter sign-up form with success message.png"
-    width="700px"
+    width="900px"
     style="display: inline; border-radius: 15px; border: "
   />
 </p>
